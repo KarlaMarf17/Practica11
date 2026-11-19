@@ -1,0 +1,17 @@
+/*Karla Yoseline Martinez Flores
+Ejercicio
+programa1.c*/
+
+#include<stdio.h>
+int main()
+{
+  int a, b;
+  a = 3;
+  b = 2;
+  if (a > b)
+  {
+    printf("\ta (%d) es mayora b (%d).\n" ,a,b);
+  }
+  printf("\tEl programa sigue su flujo.\n");
+  return 0;
+}
