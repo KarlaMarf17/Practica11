@@ -1,31 +1,30 @@
 /*Karla Yoseline Martinez Flores
 Ejercicio
-programa5.c*/
+programa6.c*/
 
 #include <stdio.h>
 int main()
 {
-  char op = '\0';
+  int op;
   printf("\tMenú\n\n");
   printf("Elegir la opción deseada\n");
-  printf("a) Ingresar\n");
-  printf("b) Registrarse\n");
-  printf("c) Salir\n");
-  scanf("%c",&op);
+  printf("1) Ingresar\n");
+  printf("2) Registrarse\n");
+  printf("3) Salir\n");
+  scanf("%d",&op);
   switch(op)
   {
+    case 1:
+      printf("Se seleccionó 'Ingresar'\n");
+      break;
+    case 2:
+      printf("Se seleccionó 'Registrarse'\n");
+      break;
+    case 3:
+      printf("Se seleccionó 'Salir'\n");
+      break;
     default:
-      printf("Opción no válida.\n");
-      break;
-    case 'a':
-      printf("Se seleccionó 'Ingresar'.\n");
-      break;
-    case 'b':
-      printf("Se seleccionó 'Registrarse'.\n");
-      break;
-    case 'c':
-      printf("Se seleccionó 'Salir'.\n");
-      break;
+      printf("Opción no válida\n");
   }
   return 0;
 }
